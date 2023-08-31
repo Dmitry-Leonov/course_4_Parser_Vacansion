@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "course-4-parser-vacansion"
+version = "0.1.0"
+description = ""
+authors = ["Dmitry Leonov <leonov.do72@gmail.com>"]
+readme = "README.md"
+packages = [{include = "course_4_parser_vacansion"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
