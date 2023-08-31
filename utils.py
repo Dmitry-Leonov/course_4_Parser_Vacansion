@@ -29,14 +29,14 @@ def parser_vacansion():
     # Записываем данные о полученных вакансиях в файл
     if vacancies_sj:
         json_vacancy.get_vacancy()
-        print(f"Отлично по вашему запросу найдено {json_vacancy.len_vacancy()} вакансий")
+        print(f"По запросу {keyword.upper()} найдено {json_vacancy.len_vacancy()} вакансий")
     else:
         print("По вашему запросу вакансий не найдено.")
 
     # Фильтруем полученные данные по заработной плате
-    key_filer = input("Сократите количество запросов указав минимальный размер желаемой заработной платы\n")
+    key_filer = input("Укажите минимальный размер желаемой заработной платы\n")
     json_vacancy.filter_vacancies(key_filer)
-    print(f"По вашему запросу найдено {json_vacancy.len_vacancy()} вакансий")
+    print(f"По запросу {keyword.upper()} с зарплатой выше {key_filer} руб. найдено {json_vacancy.len_vacancy()} вакансий")
 
     print("Вакансии отсортированы по дате")
     key_sorted = input("""Вы можете выбрать сортировку 

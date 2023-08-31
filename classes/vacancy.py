@@ -25,7 +25,7 @@ class JsonVacancy(AbstractJsonVacancy):
             print(f"Вид занятости {file['employment']}")
             print(f"Ссылка на вакансию {file['url']}")
             print(f"Данная вакансия предоставлена {file['site']}")
-            print('-' * 20)
+            print('-' * 40)
 
     def add_vacancies(self):
         pass
